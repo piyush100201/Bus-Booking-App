@@ -1,0 +1,24 @@
+<app-header2> </app-header2>
+<div class= "container">
+
+    <table >
+        <tr>
+            <th scope="col">UserId</th>
+            <th scope="col">User Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Gender</th>
+            <th scope="col">DOB</th>
+        </tr>
+        <tbody>
+            <tr >
+                <th scope="row">{{User.data._id}}</th>
+                <td>{{User.data.userName}}</td>
+                <td>{{User.data.email}}</td>
+                <td>{{User.data.phoneNumber}}</td>
+                <td>{{User.data.gender}}</td>
+                <td>{{User.data.dateOfBirth}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

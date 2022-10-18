@@ -1,0 +1,42 @@
+<app-header2>
+</app-header2>
+<div id="margins"
+    style="background-image:url(../../assets/Honme-bus.jpg);background-size:cover; background-repeat:no-repeat;background-position:center;">
+
+    <div class="card" style="width:40%">
+        <h5 class="card-header" style="background-color:#78281F; color: darkgrey;">Plan Journey</h5>
+        <div class="card-body">
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="startCity">Leaving From</label>
+                    <select class="form-control" id="startCity" name="startCity"
+                        formControlName="startCity">
+                        <option *ngFor= 'let city of sourceCities' [value]= "city">{{city}}</option>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <label for="destination">destination</label>
+                    <select class="form-control" id="destination" name="destination"
+                        formControlName="destination">
+                        <option *ngFor= 'let city of destinationCities' [value]= "city">{{city}}</option>
+                    </select>
+                </div>
+                <div class="form-group col">
+                    <label for="departDate">Date of Departure</label>
+                    <input
+                      type="date"
+                      name="departDate"
+                      class="form-control"
+                      formControlName="departDate"
+                    />
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <button type="button" class="btn btn-outline-primary"
+                    style="color:darkgray ; background-color:#78281F;">search for Buses</button>
+
+            </div>
+        </div>
+    </div>
+</div>
