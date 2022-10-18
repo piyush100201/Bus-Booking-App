@@ -6,7 +6,7 @@ const cors = require('cors');
 const mongoose =require('mongoose');
 
 //MongoDB  url
-var mongoDatabase = 'mongodb+srv://m001-student:m001-mongodb-basics@sandbox.gp5jc.mongodb.net/sprint1_project';
+var mongoDatabase = 'mongodb_url';
 
 //create  express server
 const app=express();
